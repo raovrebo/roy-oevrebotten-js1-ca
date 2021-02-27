@@ -63,7 +63,6 @@ h1 {
 }
 
 form {
-  margin: 1rem;
   padding: 3em;
   background: orange;
   border-radius: 1em;
@@ -86,7 +85,7 @@ button {
   cursor: pointer;
   border-radius: 1rem;
   justify-content: center;
-  margin-left: 1rem;
+  margin-left: 5rem;
 }
 
 label {

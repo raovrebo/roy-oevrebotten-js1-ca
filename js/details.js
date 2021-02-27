@@ -23,7 +23,7 @@ async function fetchTeamDetails() {
         })
         
         const details = await response.json();
-        console.log(details);
+        // console.log(details);
 
         createHtml(details);
 
@@ -39,10 +39,11 @@ function createHtml(details) {
     container.innerHTML = `<h1>${details.full_name}</h1>
                             <div class="breadcrumb-nav"><a href=index.html>Go back to teams</a>
                             <div class="result">The <strong>${details.name}</strong>
-                            come from the city of <strong>${details.city}</strong>. <br>
-                            They play in the <strong>${details.division} division</strong> of the      
-                            <strong>${details.conference}ern Conference</strong> of the NBA. <br>
-                            When you watch <strong>${details.full_name}</strong>
-                            play, it will be shortened to: <strong>${details.abbreviation}</strong>
-                            on the scoreboard.</div>`
+                                come from the city of <strong>${details.city}</strong>. <br>
+                                They play in the <strong>${details.division} division</strong> of the      
+                                <strong>${details.conference}ern Conference</strong> of the NBA. <br>
+                                When you watch <strong>${details.full_name}</strong>
+                                play, it will be shortened to: <strong>${details.abbreviation}</strong>
+                                on the scoreboard.
+                            </div>`
 }
